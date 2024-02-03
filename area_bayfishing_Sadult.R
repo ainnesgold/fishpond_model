@@ -304,9 +304,9 @@ ggplot(outcome %>% filter(S == 0.1 | S == 0.5 | S == 0.9) %>% filter (fishing_p1
         plot.margin = margin(1,1,1,1, "cm"),
         strip.text.x = element_text(size = 20)) +
   scale_x_continuous(limits = c(0, 10)) +
-  labs(x = "Area under loko i'a management (% of bay)", y= "Annual bay fisheries harvest (kg)")
+  labs(x = "Area under loko i'a management (% of estuary)", y= "Annual bay fisheries harvest (kg)")
 
-# not working ggsave(fig3, plot=fig3, device=NULL, path=NULL, width=1500, height=1000, units=c("px"), dpi=300)
+
 #all
 #density
 ggplot(outcome %>% filter(fishing_p1_annual!=0), aes(x=area_p3*100, y=est_harv_annual, col=fishing_p1_annual)) +
